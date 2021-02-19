@@ -1,0 +1,134 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: $margin-auto;
+  margin-left: $margin-auto;
+
+  background-color: $background-color;
+
+  .container {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: $display-flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer-left {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  // display: $display-flex;
+  // flex-direction: $flex-direction-column;
+
+  // margin-right: 70px;
+}
+
+.address {
+  margin-bottom: 8px;
+
+  font-style: $font-style-normal;
+  line-height: 0.7;
+  letter-spacing: $letter-spacing-03em;
+  color: $secondary-text-color;
+}
+
+footer .contacts {
+  .list-item + .list-item {
+    margin-top: 8px;
+  }
+
+  .link {
+    transition-property: color;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    line-height: 1.7;
+    letter-spacing: $letter-spacing-03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.footer-right {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    // display: $display-flex;
+    // flex-direction: $flex-direction-column;
+  }
+}
+
+.networks-link.footer-link-bgc {
+  transition-property: background-color;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  fill: $secondary-text-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.subscribe {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    text-align: start;
+  }
+}
+
+.subscribe-form {
+  input[type='email'] {
+    width: 100%;
+    height: 50px;
+    padding-top: $padding-15;
+    padding-bottom: $padding-15;
+    padding-right: $padding-16;
+    padding-left: $padding-16;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: $border-radius-4;
+
+    font-weight: $font-weight-400;
+    font-size: $font-size-16;
+    line-height: $line-height-1-2;
+    letter-spacing: $letter-spacing-03em;
+    color: $secondary-text-color;
+    background-color: $background-color;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
+}

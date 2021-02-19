@@ -1,0 +1,80 @@
+.our-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.our-team-list {
+  text-align: $text-align-center;
+
+  @media screen and (min-width: 768px) {
+    display: $display-flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+
+  .cards {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: $margin-30;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+  }
+}
+
+.cards-title {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 31px;
+  padding-right: 31px;
+  background-color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .names {
+    margin-top: $margin-0;
+    margin-bottom: 10px;
+
+    font-weight: $font-weight-500;
+    font-size: $font-size-16;
+    line-height: $line-height-1-2;
+    letter-spacing: $letter-spacing-03em;
+    color: $title-color;
+  }
+
+  .professions {
+    margin-top: $margin-0;
+    margin-bottom: 16px;
+
+    font-size: $font-size-16;
+    line-height: $line-height-1-2;
+    letter-spacing: $letter-spacing-03em;
+  }
+}

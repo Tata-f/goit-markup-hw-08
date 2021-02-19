@@ -1,0 +1,254 @@
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+// мобильное меню
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+
+  background-color: #fff;
+
+  &.is-open {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 40px;
+    padding-left: 40px;
+    min-height: 100vh;
+    max-width: 480px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: $line-height-1-2;
+
+    letter-spacing: 0.02em;
+    color: $title-color;
+  }
+
+  .list-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .current-page {
+    color: $accent-color;
+  }
+}
+
+.menu-contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: $line-height-1-2;
+
+  .phone {
+    margin-bottom: 32px;
+    font-size: 34px;
+    color: $accent-color;
+
+    @media screen and (max-width: 430px) {
+      font-size: 30px;
+    }
+  }
+
+  .mail {
+    font-size: 24px;
+
+    color: $primary-text-color;
+  }
+}
+
+.social-links {
+  display: flex;
+
+  .list-item {
+    & + .list-item {
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      padding-left: 10px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+
+    @media screen and (max-width: 430px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    flex-wrap: wrap;
+  }
+
+  .link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: $line-height-1-2;
+
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
+}
+
+// хедер
+
+.header .container {
+  position: relative;
+  nav {
+    display: $display-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: $display-flex;
+    align-items: $align-items-center;
+    justify-content: space-between;
+  }
+}
+
+.site-nav {
+  display: $display-flex;
+
+  .list-item + .list-item {
+    margin-left: 50px;
+  }
+
+  .link {
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    transition-property: color;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    font-weight: $font-weight-500;
+    line-height: $line-height-1-1;
+    letter-spacing: 0.02em;
+    color: $title-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header .contacts {
+  display: $display-flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 0;
+
+  .list-item {
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & + .list-item {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .link {
+    display: $display-flex;
+    flex-direction: row-reverse;
+    align-items: $align-items-center;
+
+    transition-property: color, fill;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    font-weight: $font-weight-500;
+    line-height: $line-height-1-1;
+    letter-spacing: 0.02em;
+
+    fill: $fill-icons;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.header .current {
+  position: $position-relative;
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    position: $position-absolute;
+    left: $position-0;
+    bottom: $position-0;
+
+    border-radius: 2px;
+    width: $width-height-100;
+    height: 4px;
+    margin-bottom: -2px;
+
+    background-color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

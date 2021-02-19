@@ -1,0 +1,38 @@
+.icons-networks {
+  display: $display-flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  max-width: 206px;
+  margin-top: $margin-0;
+
+  @media screen and (min-width: 480px) {
+    width: 206px;
+  }
+
+  .networks-list {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.networks-link {
+  display: $display-flex;
+  transition-property: fill, background-color;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  width: $width-height-100;
+  height: $width-height-100;
+  border-radius: 50%;
+  align-items: $align-items-center;
+  justify-content: $justify-content-center;
+
+  fill: $fill-icons;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    fill: $secondary-text-color;
+  }
+}

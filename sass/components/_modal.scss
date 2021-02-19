@@ -1,0 +1,219 @@
+.backdrop {
+  position: fixed;
+  left: $position-0;
+  top: $position-0;
+  width: $width-height-100;
+  height: $width-height-100;
+
+  transition-property: opacity;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    &.modal {
+      transform: opacity 0;
+    }
+  }
+}
+
+.modal .icon-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover svg {
+    fill: $accent-color;
+  }
+
+  svg {
+    position: $position-absolute;
+    top: 5px;
+    right: 5px;
+
+    transition-property: fill;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    fill: $color-black;
+
+    cursor: $cursor-pointer;
+  }
+}
+
+.modal {
+  position: $position-absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  transition-property: opacity;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  opacity: 1;
+  background-color: $secondary-text-color;
+
+  .subtitle {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: $text-align-center;
+    text-transform: none;
+
+    color: $title-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.form-field {
+  position: relative;
+  display: $display-flex;
+  flex-direction: $flex-direction-column;
+
+  svg {
+    position: $position-absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    fill: $color-black;
+  }
+}
+
+.form {
+  display: $display-flex;
+  flex-direction: $flex-direction-column;
+
+  .form-label {
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: $line-height-1-2;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    cursor: $cursor-pointer;
+
+    &:first-child {
+      margin-top: $margin-0;
+    }
+  }
+
+  .textarea {
+    padding-left: $padding-16;
+    margin-bottom: 20px;
+    resize: none;
+    height: 120px;
+
+    &::placeholder {
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  .form-input:focus + svg {
+    fill: $accent-color;
+  }
+}
+
+.input-textarea {
+  transition-property: fill, border;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: $padding-16;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: $border-radius-4;
+  cursor: $cursor-pointer;
+
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.agreement {
+  margin-bottom: 30px;
+  align-self: center;
+
+  font-size: 12px;
+  line-height: 1.2;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .link {
+    text-decoration: underline;
+    line-height: 1.7;
+    letter-spacing: $letter-spacing-03em;
+    color: $accent-color;
+  }
+}
+
+.label-checkbox {
+  display: $display-flex;
+  align-items: $align-items-center;
+  cursor: $cursor-pointer;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    min-width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid $title-color;
+    border-radius: 2px;
+    cursor: $cursor-pointer;
+  }
+}
+
+.checkbox {
+  &:focus + .label-checkbox::before {
+    border: 1px solid $accent-color;
+  }
+  &:checked + .label-checkbox::before {
+    background: url(../images/icon-check.svg);
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
