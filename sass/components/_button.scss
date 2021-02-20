@@ -36,7 +36,7 @@
 
   line-height: 2;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     display: inline-flex;
     margin-right: 0;
     margin-left: 0;
@@ -57,7 +57,7 @@
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -87,11 +87,11 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     margin-bottom: 50px;
   }
 
@@ -111,7 +111,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     justify-content: center;
   }
 }

@@ -9,14 +9,14 @@
   .container {
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: $display-flex;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-around;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       text-align: start;
       justify-content: space-between;
     }
@@ -26,13 +26,9 @@
 .footer-left {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
-  // display: $display-flex;
-  // flex-direction: $flex-direction-column;
-
-  // margin-right: 70px;
 }
 
 .address {
@@ -67,10 +63,8 @@ footer .contacts {
 
 .footer-right {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
-    // display: $display-flex;
-    // flex-direction: $flex-direction-column;
   }
 }
 
@@ -91,11 +85,11 @@ footer .contacts {
 .subscribe {
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     margin-top: 0;
     text-align: start;
   }
@@ -121,11 +115,11 @@ footer .contacts {
     color: $secondary-text-color;
     background-color: $background-color;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $mobile) {
       width: 450px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       width: 358px;
       margin-right: 12px;
       margin-bottom: 0;

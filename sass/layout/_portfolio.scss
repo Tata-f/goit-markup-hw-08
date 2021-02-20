@@ -4,14 +4,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .portfolio-section .cards {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: $display-flex;
     flex-wrap: wrap;
 
@@ -29,12 +29,12 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       width: calc((100% - 6 * 15px) / 3);
       margin: 15px;
     }
@@ -93,12 +93,12 @@
       padding-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       padding-top: 49px;
       padding-bottom: 49px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       padding-top: 63px;
       padding-bottom: 63px;
     }

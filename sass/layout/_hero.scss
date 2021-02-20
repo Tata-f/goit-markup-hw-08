@@ -4,7 +4,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -39,7 +39,7 @@
     max-width: 360px;
     text-align: $text-align-center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       max-width: 696px;
     }
   }
@@ -56,7 +56,7 @@
   text-transform: $text-uppercase;
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     font-size: 44px;
     line-height: 1.4;
   }

@@ -2,14 +2,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .features-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
 
@@ -23,12 +23,12 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }
@@ -52,7 +52,7 @@
   font-family: 'Roboto';
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: start;
   }
 }

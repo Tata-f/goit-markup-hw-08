@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     display: block;
   }
 }
@@ -23,7 +23,7 @@
   &.is-open {
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
@@ -36,7 +36,7 @@
     padding-right: 40px;
     padding-left: 40px;
     min-height: 100vh;
-    max-width: 480px;
+    max-width: $mobile;
   }
 }
 
@@ -130,7 +130,7 @@
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: $display-flex;
     align-items: $align-items-center;
     justify-content: space-between;
@@ -182,7 +182,7 @@
       }
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       & + .list-item {
         margin-left: 30px;
       }
@@ -211,7 +211,7 @@
       fill: $accent-color;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $descktop) {
       padding-top: 32px;
       padding-bottom: 32px;
     }
@@ -225,7 +225,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $descktop) {
     flex-direction: row;
   }
 }
