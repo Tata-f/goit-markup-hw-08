@@ -372,7 +372,6 @@ img {
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 88px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1112,7 +1111,7 @@ footer .contacts .link:hover, footer .contacts .link:focus {
   color: #212121;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1333,6 +1332,14 @@ footer .contacts .link:hover, footer .contacts .link:focus {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio-section .cards .text {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
