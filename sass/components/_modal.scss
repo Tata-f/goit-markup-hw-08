@@ -88,7 +88,7 @@
     height: 609px;
   }
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
   }
@@ -175,7 +175,7 @@
   line-height: 1.2;
   color: $primary-text-color;
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.7;
   }

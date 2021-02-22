@@ -7,7 +7,7 @@
   letter-spacing: $letter-spacing-03em;
   color: $color-black;
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 26px;
   }
 
@@ -21,7 +21,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
   }
 }

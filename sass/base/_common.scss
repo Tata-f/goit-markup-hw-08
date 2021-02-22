@@ -50,8 +50,8 @@ img {
     width: $tablet;
   }
 
-  @media screen and (min-width: $descktop) {
-    width: $descktop;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
@@ -68,7 +68,7 @@ img {
   text-align: $text-align-center;
   color: $title-color;
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
     font-size: 36px;
   }

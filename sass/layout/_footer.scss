@@ -16,7 +16,7 @@
       justify-content: space-around;
     }
 
-    @media screen and (min-width: $descktop) {
+    @media screen and (min-width: $desktop) {
       text-align: start;
       justify-content: space-between;
     }
@@ -89,7 +89,7 @@ footer .contacts {
     margin-top: 60px;
   }
 
-  @media screen and (min-width: $descktop) {
+  @media screen and (min-width: $desktop) {
     margin-top: 0;
     text-align: start;
   }
@@ -119,7 +119,7 @@ footer .contacts {
       width: 450px;
     }
 
-    @media screen and (min-width: $descktop) {
+    @media screen and (min-width: $desktop) {
       width: 358px;
       margin-right: 12px;
       margin-bottom: 0;
